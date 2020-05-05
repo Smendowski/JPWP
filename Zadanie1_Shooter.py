@@ -71,7 +71,7 @@ while True:
     connection, address = s.accept()
 
 
-    print("Connected to:", addr)
+    print("Connected to:", addrress)
 
     #TODO rozpocznij nowy wątek przy pomocy funkncji
     # start_new_thread(<WYWOŁYWANA FUNKCJA>, <OBIEKT TUPLE ZAWIERAJĄCY POŁĄCZENIE I NUMER GRACZA (ARGUMENTY)>)
