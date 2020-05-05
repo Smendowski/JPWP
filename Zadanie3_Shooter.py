@@ -60,7 +60,7 @@ while (running):
     #TODO Dopisz kolejne ify sprawdzające czy czy użytkownik nacisnął klawisze: W, S, D oraz podaj instrukcje, które określają sposób poruszania się gracza
     if keys[pygame.K_d]: # PRAWO  x+
         player1.x += player1.speed
-    if keys[pygame.K_w]: # GÓRA y+ 
+    if keys[pygame.K_w]: # GÓRA y-
         player1.y -= player1.speed
     if keys[pygame.K_s]: # DÓŁ y+
         player1.y += player1.speed
