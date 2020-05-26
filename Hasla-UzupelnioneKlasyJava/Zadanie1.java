@@ -29,6 +29,7 @@ public class Zadanie1 extends Application {
         // Tu wpisz rozwiązanie:
 
         ///////////////////////////////////
+        // ZADANIE 1
         pickDate = new DatePicker();
         pickDate.setMinSize(100, 50);
         pickDate.setMaxSize(100, 50);
