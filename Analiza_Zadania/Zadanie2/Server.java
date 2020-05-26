@@ -36,23 +36,14 @@ public class Server {
     }
 
     public void sendMail(){
-        //Check if there are any subscribers on a list
-        if (!coronavirusSubscribers.isEmpty()) {
-            //Create new Mailer instance
-            Mailer mailer = new Mailer();
-            //Get news to send
-            site = new Info().newsToNewsletter();
-            //Send news to all subscribers
-            for (String subscriber : coronavirusSubscribers) {
-                mailer.sendEmail(email, emailPassword, subscriber,"Mail", site);
-            }
-        }
+        //TODO 3.2 Napisz funkcję, wysyłającą maile do wszystkich sybskrybentów
     }
 
     Server() throws IOException {
         //Add your email to check correctness of your code
         /*coronavirusSubscribers.add("");
         this.sendMail();*/
+
         //Start timer to send email every 8h
         timer.start();
         try {
@@ -66,8 +57,10 @@ public class Server {
             Socket socket = null;
             try {
                 //Accept incoming requests
+                //TODO 2.1 Akcpetuj połączenia, przychodzące od klientów
                 socket = serverSocket.accept();
                 //Create data streams to communicate
+                //TODO 2.1 Utórz przychodzący i wychodzący strumień danych, zapisz je jako in oraz out
                 DataInputStream in = new DataInputStream(socket.getInputStream());
                 DataOutputStream out = new DataOutputStream(socket.getOutputStream());
                 //Create new ClientHandler instance and pass to it server, socket and data streams
